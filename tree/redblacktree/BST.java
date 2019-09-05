@@ -137,6 +137,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     private Node colorFlip(Node node) {
         node.color = !node.color;
         node.left.color = !node.left.color;
+
+
         node.right.color = !node.right.color;
         return node;
     }

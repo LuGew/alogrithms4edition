@@ -6,7 +6,7 @@ package tree.util;
  * @author LuGew
  */
 public interface Tree<T extends Comparable<T>> extends Display {
-    T get(T element);
+    int get(T element);
 
     boolean put(T element);
 }

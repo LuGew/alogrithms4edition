@@ -35,7 +35,7 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> extends Abstra
         }
         node.parent = previousNode;
         while (previousNode != null) {
-            previousNode.size += 1;
+            previousNode.size += size(previousNode.right) + size(previousNode.left) + 1;
             previousNode = previousNode.parent;
         }
         return true;
